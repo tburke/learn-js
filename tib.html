@@ -2,13 +2,16 @@
 <body>
 <h1>TIB Page</h1>
 <script>
-  f = function (n) { return n / 5 + 345 }
-  document.write("<p>"+f(456)+"</p>")
+function tib() 
+{ 
+  n = document.getElementById("num")
+  document.write("<p>"+n/5+435+"</p>")
+}
 </script>
 <script>
   f = function (n) { return n * 4 + 345 }
   document.write("<p>"+f(4)+"</p>")
 </script>
-<input name="num"/>
+Num: <input name="num" id="num" onchange="tib()" />
 </body>
 </html>
