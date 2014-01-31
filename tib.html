@@ -5,7 +5,8 @@
 function tib() 
 { 
   n = document.getElementById("num")
-  document.write("<p>"+n/5+435+"</p>")
+  r = document.getElementById("result")
+  r.innerHTML = n.value/5+435
 }
 </script>
 <script>
@@ -13,5 +14,6 @@ function tib()
   document.write("<p>"+f(4)+"</p>")
 </script>
 Num: <input name="num" id="num" onchange="tib()" />
+<p id="result"></p>
 </body>
 </html>
