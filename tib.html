@@ -2,15 +2,18 @@
 <body>
 <h1>TIB Page</h1>
 <script>
-function tib() 
+function rectangle() 
 { 
-  n = document.getElementById("num")
+  h = document.getElementById("h")
+  w = document.getElementById("w")
   r = document.getElementById("result")
-  r.innerHTML = n.value/5+435
+  r.innerHTML = h.value * w.value
 }
 </script>
 
-Num: <input name="num" id="num" onchange="tib()" />
+Height: <input id="h" />
+Width: <input id="w" />
+<input name="result" type="submit" onclick="rectangle()" />
 <p id="result"></p>
 </body>
 </html>
